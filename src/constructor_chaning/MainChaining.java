@@ -5,5 +5,6 @@ public class MainChaining {
         Faculty faculty = new Faculty();
         System.out.println("(5) Performs main.");
 
+
     }
 }

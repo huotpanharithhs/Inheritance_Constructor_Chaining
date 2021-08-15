@@ -10,6 +10,7 @@ public class Circle extends GeometricObject {
 
     public Circle(double radius) {
         this.radius = radius;
+        System.out.println("Class Circle.");
     }
 
     public Circle(String color, boolean filled, double radius) {
@@ -37,8 +38,8 @@ public class Circle extends GeometricObject {
         return 2 * radius;
     }
 
-    public void printCircle() {
-        System.out.println("រង្វង់មានកាំស្មើ " + radius + " ក្រឡាផ្ទៃរង្វង់ស្មើ " + getArea() +
-                " បរិមាត្ររង្វង់ស្មើ " + getPerimeter() + " អង្កត់ផ្ចិត " + getDiameter() + toString());
+    @Override
+    public String toString() {
+        return super.toString()+ "អង្កត់ផ្ចិត = "+ getDiameter() + "Area = "+getArea() + "Perimeter = "+ getPerimeter() ;
     }
 }

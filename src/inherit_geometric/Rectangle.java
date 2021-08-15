@@ -5,12 +5,13 @@ public class Rectangle extends GeometricObject {
     private double height = 0;
 
     public Rectangle() {
-
+        System.out.println("Class Rectangle.");
     }
 
     public Rectangle(double width, double height) {
         this.width = width;
         this.height = height;
+        System.out.println("Class Rectangle.");
     }
 
     public Rectangle(String color, boolean filled, double width, double height) {
@@ -43,8 +44,8 @@ public class Rectangle extends GeometricObject {
         return 2 * (width + height);
     }
 
-    public void printRectangle() {
-        System.out.println("ចតុកោណកែងមាន ទទឹង " + width + " កំពស់ " + height +
-                " ក្រឡាផ្ទៃ " + getArea() + " បរិមាត្រ " + getPerimeter() + toString());
+    @Override
+    public String toString() {
+        return super.toString()+"Area =" + getArea() + "Perimeter = " + getPerimeter();
     }
 }

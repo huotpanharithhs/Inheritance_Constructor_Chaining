@@ -46,4 +46,12 @@ public class GeometricObject {
     public String toString() {
         return "រូបកើតឡើងនៅ " + dateCreated + " ពណ៌ " + color + " បំពេញពណ៌ " + filled;
     }
+
+    public double getArea() {
+        return 0;
+    }
+
+    public double getPerimeter() {
+        return 0;
+    }
 }
